@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>PHP程序设计基础教程</string>
+		<key>icon</key>
+		<string>icon_00.jpg</string>
+		<key>detail</key>
+		<string>PHP是一种运行于服务器端并完全跨平台的嵌入式脚本编程语言，是目前开发各类Web应用的主流语言之一。本书就是面向PHP初学者特别推出的一本入门教材。本书站在初学者的角度，以形象的比喻、丰富的图解、实用的案例、通俗易懂的语言详细讲解了PHP语言。</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_01.jpg</string>
+		<key>name</key>
+		<string>C#程序设计基础入门教程</string>
+		<key>detail</key>
+		<string>C#作为微软的旗舰编程语言，深受程序员喜爱，它是编写高效应用程序的首选语言。《C#程序设计基础入门教程》就是面向零基础的学生推出的一本入门书籍，本书从初学者角度，以通俗易懂的语言、丰富多彩的实例，详细讲解了实用C#语言进行程序开发时应该掌握的各种技术。</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_02.jpg</string>
+		<key>name</key>
+		<string>Java基础入门</string>
+		<key>detail</key>
+		<string>本书为Java基础入门教材，让初学者能达到熟悉Java语言并灵活运用的程度。本书针对每个知识点都进行了深入分析，使用生动形象的情节化举例，将原本复杂的、难以理解的知识点和问题简化，真正遵循了由浅入深、由易到难的学习规律。另外，本书针对每个知识点，精心设计了相应的经典案例，帮助初学者清楚地知道在实际工作中如何去运用。</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_03.jpg</string>
+		<key>name</key>
+		<string>MySQL数据库入门</string>
+		<key>detail</key>
+		<string>MySQL数据库是以“客户端/服务器”模式实现的，是一个多用户、多线程的小型数据库。MySQL因其稳定、可靠、快速、管理方便以及支持众多系统平台的特点，成为世界范围内最流行的开源数据库之一。《MySQL数据库入门》就是面向数据库初学者特地推出的一门进阶学习的入门教材，本教材站在初学者角度，详细介绍了MySQL的开发和管理技术。</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_04.jpg</string>
+		<key>name</key>
+		<string>Objective-C入门教程</string>
+		<key>detail</key>
+		<string>Objective-C是一门面向对象的高级编程语言，本书建议在C语言的基础上，采用需求引入的方式、通俗易懂的语言对每个知识点都进行了详细讲解，而且不局限理论介绍，采用“案例驱动”的方式深入讲解，可以这么说，书中的每个知识点都可以找到对应的案例。</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>icon_05.jpg</string>
+		<key>name</key>
+		<string>网页设计与制作(HTML+CSS)</string>
+		<key>detail</key>
+		<string>HTML与CSS是网页制作技术的核心和基础，也是每个网页制作者必须要掌握的基础知识，两者在网页设计中不可或缺。本书从初学者的角度，针对网页制作中的核心技术进行了详细讲解，并且在带领初学者开发了一个完整的中型网站。</string>
+	</dict>
+</array>
+</plist>

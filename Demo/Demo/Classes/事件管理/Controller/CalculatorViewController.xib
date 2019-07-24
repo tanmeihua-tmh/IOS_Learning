@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorViewController">
+            <connections>
+                <outlet property="equalBtn" destination="s2L-UM-Gwo" id="qyE-JW-jaO"/>
+                <outlet property="firstTF" destination="CCK-Ud-Yh3" id="rGg-FA-kEu"/>
+                <outlet property="methodBtn" destination="K9r-8j-Ekn" id="KEH-qY-h3w"/>
+                <outlet property="resultLB" destination="B55-fG-Itm" id="Ztr-n6-MHX"/>
+                <outlet property="secondTF" destination="sX4-8f-KGv" id="8dm-Xm-Lys"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CCK-Ud-Yh3">
+                    <rect key="frame" x="8" y="167" width="398" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sX4-8f-KGv">
+                    <rect key="frame" x="8" y="291" width="398" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2L-UM-Gwo">
+                    <rect key="frame" x="8" y="351" width="398" height="34"/>
+                    <state key="normal" title="＝">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="equalClick:" destination="-1" eventType="touchUpInside" id="2uA-HJ-7Uo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最多显示十位有效数字" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B55-fG-Itm">
+                    <rect key="frame" x="8" y="415" width="398" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9r-8j-Ekn">
+                    <rect key="frame" x="8" y="227" width="398" height="34"/>
+                    <state key="normal" title="➕"/>
+                    <connections>
+                        <action selector="methodClick:" destination="-1" eventType="touchUpInside" id="uym-Gw-ept"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="B55-fG-Itm" firstAttribute="top" secondItem="s2L-UM-Gwo" secondAttribute="bottom" constant="30" id="1q8-KE-fdF"/>
+                <constraint firstItem="CCK-Ud-Yh3" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="123" id="50x-sT-7N5"/>
+                <constraint firstItem="s2L-UM-Gwo" firstAttribute="top" secondItem="sX4-8f-KGv" secondAttribute="bottom" constant="30" id="Fuf-Vp-Wk7"/>
+                <constraint firstItem="s2L-UM-Gwo" firstAttribute="leading" secondItem="sX4-8f-KGv" secondAttribute="leading" id="He2-DG-V0U"/>
+                <constraint firstItem="s2L-UM-Gwo" firstAttribute="trailing" secondItem="sX4-8f-KGv" secondAttribute="trailing" id="Hg5-P5-Iu7"/>
+                <constraint firstItem="K9r-8j-Ekn" firstAttribute="trailing" secondItem="CCK-Ud-Yh3" secondAttribute="trailing" id="JYb-ia-1ac"/>
+                <constraint firstItem="sX4-8f-KGv" firstAttribute="top" secondItem="K9r-8j-Ekn" secondAttribute="bottom" constant="30" id="LIg-HS-ncT"/>
+                <constraint firstItem="B55-fG-Itm" firstAttribute="trailing" secondItem="s2L-UM-Gwo" secondAttribute="trailing" id="Vt0-5f-eU6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="CCK-Ud-Yh3" secondAttribute="trailing" constant="8" id="Wab-1b-jdY"/>
+                <constraint firstItem="B55-fG-Itm" firstAttribute="leading" secondItem="s2L-UM-Gwo" secondAttribute="leading" id="YJo-KZ-WML"/>
+                <constraint firstItem="K9r-8j-Ekn" firstAttribute="top" secondItem="CCK-Ud-Yh3" secondAttribute="bottom" constant="30" id="fYh-Be-Hvu"/>
+                <constraint firstItem="CCK-Ud-Yh3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="8" id="kis-11-Ugz"/>
+                <constraint firstItem="sX4-8f-KGv" firstAttribute="leading" secondItem="CCK-Ud-Yh3" secondAttribute="leading" id="pny-Gx-J2c"/>
+                <constraint firstItem="K9r-8j-Ekn" firstAttribute="leading" secondItem="CCK-Ud-Yh3" secondAttribute="leading" id="w9w-7H-eir"/>
+                <constraint firstItem="sX4-8f-KGv" firstAttribute="trailing" secondItem="CCK-Ud-Yh3" secondAttribute="trailing" id="wyI-S4-6zc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

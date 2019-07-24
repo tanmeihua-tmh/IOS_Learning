@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventDetailInfoViewController">
+            <connections>
+                <outlet property="descriptConstraint" destination="oi4-3V-Nst" id="5vG-Uh-T6R"/>
+                <outlet property="descriptTextView" destination="dig-aM-mGs" id="Y3n-Kp-ovl"/>
+                <outlet property="detailConstraint" destination="mGf-TH-W3a" id="cpW-CS-rCF"/>
+                <outlet property="detailTextView" destination="iPg-IB-dSx" id="4P3-lf-fQD"/>
+                <outlet property="scrollView" destination="uuN-tv-V0j" id="VGa-GC-foT"/>
+                <outlet property="titleConstraint" destination="83w-IL-vSn" id="szk-Zt-74y"/>
+                <outlet property="titleTextView" destination="uta-EU-0LC" id="4fV-sg-EU1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="widthConstraint" destination="snZ-Xx-hXM" id="sGg-8D-aUd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="900" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuN-tv-V0j">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="394" placeholderIntrinsicHeight="24" text="标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eM-px-ILQ">
+                            <rect key="frame" x="10" y="10" width="394" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="394" id="snZ-Xx-hXM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="394" placeholderIntrinsicHeight="128" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uta-EU-0LC" customClass="PlaceHolderTextView">
+                            <rect key="frame" x="10" y="44" width="394" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="83w-IL-vSn"/>
+                            </constraints>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1t-GW-vPO">
+                            <rect key="frame" x="10" y="180" width="394" height="19.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="394" placeholderIntrinsicHeight="128" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dig-aM-mGs" customClass="PlaceHolderTextView">
+                            <rect key="frame" x="10" y="207.5" width="394" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="oi4-3V-Nst"/>
+                            </constraints>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="详情" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmG-C7-ERU">
+                            <rect key="frame" x="10" y="343.5" width="394" height="17"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="394" placeholderIntrinsicHeight="128" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPg-IB-dSx" customClass="PlaceHolderTextView">
+                            <rect key="frame" x="10" y="368.5" width="394" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="mGf-TH-W3a"/>
+                            </constraints>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="l1t-GW-vPO" firstAttribute="leading" secondItem="7eM-px-ILQ" secondAttribute="leading" id="2H2-ey-tlZ"/>
+                        <constraint firstItem="dig-aM-mGs" firstAttribute="leading" secondItem="uta-EU-0LC" secondAttribute="leading" id="2P3-DI-oH2"/>
+                        <constraint firstItem="NmG-C7-ERU" firstAttribute="trailing" secondItem="l1t-GW-vPO" secondAttribute="trailing" id="J5d-TJ-nqa"/>
+                        <constraint firstItem="7eM-px-ILQ" firstAttribute="top" secondItem="uuN-tv-V0j" secondAttribute="top" constant="10" id="K63-1F-POs"/>
+                        <constraint firstAttribute="bottom" secondItem="iPg-IB-dSx" secondAttribute="bottom" constant="5" id="LVX-B5-QHy"/>
+                        <constraint firstItem="NmG-C7-ERU" firstAttribute="leading" secondItem="l1t-GW-vPO" secondAttribute="leading" id="R17-Ub-DIo"/>
+                        <constraint firstItem="l1t-GW-vPO" firstAttribute="trailing" secondItem="7eM-px-ILQ" secondAttribute="trailing" id="VsJ-DR-Wso"/>
+                        <constraint firstItem="uta-EU-0LC" firstAttribute="top" secondItem="7eM-px-ILQ" secondAttribute="bottom" constant="10" id="X8s-lU-FLI"/>
+                        <constraint firstItem="uta-EU-0LC" firstAttribute="leading" secondItem="7eM-px-ILQ" secondAttribute="leading" id="XZ8-qR-B9x"/>
+                        <constraint firstItem="iPg-IB-dSx" firstAttribute="trailing" secondItem="dig-aM-mGs" secondAttribute="trailing" id="YK8-L7-19g"/>
+                        <constraint firstAttribute="trailing" secondItem="7eM-px-ILQ" secondAttribute="trailing" constant="10" id="cBc-Jk-RWr"/>
+                        <constraint firstItem="dig-aM-mGs" firstAttribute="trailing" secondItem="uta-EU-0LC" secondAttribute="trailing" id="gvc-sa-ucn"/>
+                        <constraint firstItem="7eM-px-ILQ" firstAttribute="leading" secondItem="uuN-tv-V0j" secondAttribute="leading" constant="10" id="kAr-qR-OdV"/>
+                        <constraint firstItem="NmG-C7-ERU" firstAttribute="top" secondItem="dig-aM-mGs" secondAttribute="bottom" constant="8" id="mab-Io-A2G"/>
+                        <constraint firstItem="uta-EU-0LC" firstAttribute="trailing" secondItem="7eM-px-ILQ" secondAttribute="trailing" id="mgk-Iw-tcH"/>
+                        <constraint firstItem="iPg-IB-dSx" firstAttribute="top" secondItem="NmG-C7-ERU" secondAttribute="bottom" constant="8" id="n4p-cF-MlJ"/>
+                        <constraint firstItem="l1t-GW-vPO" firstAttribute="top" secondItem="uta-EU-0LC" secondAttribute="bottom" constant="8" id="sRF-EJ-SEY"/>
+                        <constraint firstItem="dig-aM-mGs" firstAttribute="top" secondItem="l1t-GW-vPO" secondAttribute="bottom" constant="8" id="sdE-GO-nAB"/>
+                        <constraint firstItem="iPg-IB-dSx" firstAttribute="leading" secondItem="dig-aM-mGs" secondAttribute="leading" id="yuf-wG-V7E"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uuN-tv-V0j" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Mxo-JI-aFk"/>
+                <constraint firstItem="uuN-tv-V0j" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="eb6-A9-pi7"/>
+                <constraint firstItem="uuN-tv-V0j" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="m4E-9r-L5t"/>
+                <constraint firstItem="uuN-tv-V0j" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="mxs-z6-8dE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </view>
+    </objects>
+</document>

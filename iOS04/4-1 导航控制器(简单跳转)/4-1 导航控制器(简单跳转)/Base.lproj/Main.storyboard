@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OMi-kB-3Pc">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Jom-CF-HIt">
+            <objects>
+                <navigationController id="OMi-kB-3Pc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bax-mu-iG0">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VRz-vN-El2" kind="relationship" relationship="rootViewController" id="WEa-vF-dqG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9mP-eO-Vam" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522" y="-1273"/>
+        </scene>
+        <!--My Root-->
+        <scene sceneID="SHM-zq-Wkr">
+            <objects>
+                <viewController id="VRz-vN-El2" customClass="OneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bjD-pU-bgt"/>
+                        <viewControllerLayoutGuide type="bottom" id="pX0-BV-jGO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OUv-R4-VrU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.68277081360000003" green="1" blue="0.83058706469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Root" id="UhE-gZ-QJL">
+                        <barButtonItem key="backBarButtonItem" title="返回Root" id="VVF-1M-qjn"/>
+                        <barButtonItem key="leftBarButtonItem" title="My One" id="KrN-OP-M4h">
+                            <connections>
+                                <segue destination="wcN-1I-dQN" kind="show" id="CDl-hH-6Il"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="My Two" id="6eU-nd-OtJ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pst-W0-8bt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="-1263"/>
+        </scene>
+        <!--My Two-->
+        <scene sceneID="7IZ-FN-rjV">
+            <objects>
+                <viewController id="wcN-1I-dQN" customClass="TwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vd0-80-g3J"/>
+                        <viewControllerLayoutGuide type="bottom" id="sFo-yl-RvS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wGB-Wn-GgV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="My Two" id="q6A-yI-MpW"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTx-r4-NEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="-1263"/>
+        </scene>
+    </scenes>
+</document>
